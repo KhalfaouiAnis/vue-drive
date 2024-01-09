@@ -1,26 +1,48 @@
 {
-  "files": [
+  "folders": [
     {
-      "id": 1,
-      "name": "File 1.jpg",
-      "url": "https://picsum.photos/id/1015/350/200",
-      "mimeType": "image/jpeg"
+      "name": "Work",
+      "folderId": 0,
+      "id": 1
     },
     {
-      "id": 2,
-      "name": "File 2.png",
-      "url": "https://picsum.photos/id/1039/350/200",
-      "mimeType": "image/png"
+      "name": "My Images",
+      "folderId": 0,
+      "id": 2
+    },
+    {
+      "name": "Other",
+      "folderId": 0,
+      "id": 3
+    }
+  ],
+  "files": [
+    {
+      "id": 3,
+      "name": "Word document.doc",
+      "mimeType": "application/msword",
+      "url": "https://images.pexels.com/photos/4057060/pexels-photo-4057060.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "folderId": 0
     },
     {
       "id": 4,
-      "name": "File 4 updated.pdf",
-      "mimeType": "application/pdf"
+      "name": "PDF document.pdf",
+      "mimeType": "application/pdf",
+      "folderId": 0
     },
     {
-      "id": 5,
-      "name": "File 5.xls",
-      "mimeType": "application/vnd.ms-excel"
+      "id": 1,
+      "name": "Color.jpg",
+      "url": "https://images.pexels.com/photos/891030/pexels-photo-891030.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "mimeType": "image/jpeg",
+      "folderId": 0
+    },
+    {
+      "id": 2,
+      "name": "Office.jpeg",
+      "url": "https://images.pexels.com/photos/939331/pexels-photo-939331.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "mimeType": "image/jpeg",
+      "folderId": 0
     }
   ]
 }

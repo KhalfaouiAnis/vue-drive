@@ -1,15 +1,3 @@
-<script>
-export default {
-  props: {
-    selectedCount: {
-      type: Number,
-      default: 0
-    }
-  },
-  emits: ["rename", "remove"]
-}
-</script>
-
 <template>
   <div class="
       d-flex
@@ -19,9 +7,12 @@ export default {
       pt-2
       pb-3
     ">
-    <button class="btn btn-outline-primary">
-      <icon-upload /> Upload Files
-    </button>
+    <div>
+      <button class="me-2 btn btn-outline-success" @click="$emit('create-folder')">
+        <icon-folder-plus /> New Folder
+      </button>
+      <FileChooser @files-choosen="$emit('files-choosen', $event)" />
+    </div>
 
     <div class="action-buttons" v-show="selectedCount">
       <button type="button" class="rounded-button" title="Rename" v-show="selectedCount === 1" @click="$emit('rename')">
@@ -33,3 +24,18 @@ export default {
     </div>
   </div>
 </template>
+
+<script>
+import FileChooser from "../components/uploader/file-chooser/FileChooser.vue";
+
+export default {
+  props: {
+    selectedCount: {
+      type: Number,
+      default: 0,
+    },
+  },
+  components: { FileChooser },
+  emits: ["rename", "remove", "files-choosen", 'create-folder'],
+};
+</script>
